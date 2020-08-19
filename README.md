@@ -13,13 +13,14 @@
     -> Edge cases:
         * If the user uses the words such as "dont" or "wont" the the app will not execute that command and will give a 
           sweet response.
-        * If the software requsted by the user is not installed in the system, then also the app will not crash (this a taken 
-          care with the help of status code which `os.system()` command returns.)
+        * If the software requested by the user is not installed in the system, then also the app will not crash (this is taken 
+          care with the help of return code which `os.system()` command returns- 0 for True and 1 for False.)
         * If the user enters some weired command then also the app will not crash and will respond with a reply.
+        * If the user enters an empty string then also the app will not crash and will keep working.
         
      -> Features:
-        * If user wants to open "web browser" then the app will also ask for the website user wants to open and after taking
-          the input it will open the site
+        * If user wants to open "web browser" then the app will also ask for the website which user wants to open and after taking
+          the input it will open the site.
         * If the user says something like "i want to paint / draw" then the app will launch MSPaint.
         * All the conversation from the application side are done verbally using the `pyttsx3` module and also the voice is 
           changed from male to female.
